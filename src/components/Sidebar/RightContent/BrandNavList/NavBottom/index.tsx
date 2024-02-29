@@ -1,9 +1,9 @@
 import stylex from "@stylexjs/stylex";
 
 import Moon from "img/Moon";
-import Toogle from "img/Toogle";
+import Toogle from "@/img/Toggle";
 import Logout from "img/Logout";
-import { colors, weightFont } from "../../../../../tokens.stylex";
+import { colors, weightFont, fontFamily } from "../../../../../tokens.stylex";
 
 const MAXWIDTH = "@media screen and (max-width: 600px)";
 
@@ -19,6 +19,7 @@ const styles = stylex.create({
     justifyContent: { default: "space-around", [MAXWIDTH]: "initial" },
     paddingLeft: { default: "initial", [MAXWIDTH]: 6 },
     alignItems: "center",
+    fill: colors["cinza-600"],
   },
   textNavBotton: {
     display: { default: "flex", [MAXWIDTH]: "none" },
@@ -50,6 +51,7 @@ const styles = stylex.create({
     marginLeft: 10,
     fontWeight: weightFont["simi-bold-600"],
     color: colors["azul-500"],
+    fontFamily: fontFamily.Epilogue,
   },
 });
 

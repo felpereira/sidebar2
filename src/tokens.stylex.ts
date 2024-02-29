@@ -11,7 +11,6 @@ export const colors = stylex.defineVars({
   "cinza-700": { default: "#667a8a", [DARK]: "red" },
   "azul-500": { default: "#e9f5fe", [DARK]: "red" },
   "primary-600": { default: "#0c7fda", [DARK]: "red" },
-
   primaryText: { default: "lightblue", [DARK]: "lightblue" },
   secondaryText: { default: "#333", [DARK]: "#ccc" },
   accent: { default: "blue", [DARK]: "lightblue" },
@@ -22,6 +21,15 @@ export const colors = stylex.defineVars({
 export const weightFont = stylex.defineVars({
   "simi-bold-600": "600",
   "regular-400": "400",
+});
+
+export const fontFamily = stylex.defineVars({
+  Epilogue:
+    "Epilogue, -apple-system, BlinkMacSystemFont, Segoe UI,Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif; !important",
+});
+
+export const mediaQuerys = stylex.defineVars({
+  MAXWIDTH: "@media screen and (max-width: 600px)",
 });
 
 export const spacing = stylex.defineVars({

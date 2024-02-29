@@ -1,13 +1,10 @@
 import stylex from "@stylexjs/stylex";
 import Sidebar from "../components/Sidebar/index";
 
-const s = stylex.create({
+const styles = stylex.create({
   main: {
-    height: "100vh",
+    height: "100%",
     width: "100vw",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
   },
   myHeading: {
     color: "red",
@@ -22,7 +19,7 @@ const s = stylex.create({
 
 export default function Home() {
   return (
-    <main>
+    <main {...stylex.props(styles.main)}>
       <Sidebar />
     </main>
   );

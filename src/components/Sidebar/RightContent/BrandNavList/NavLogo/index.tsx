@@ -1,6 +1,8 @@
 import stylex from "@stylexjs/stylex";
 import { weightFont } from "../../../../../tokens.stylex";
+
 const MAXWIDTH = "@media screen and (max-width: 600px)";
+
 const styles = stylex.create({
   brand: {
     display: "flex",
@@ -25,7 +27,7 @@ interface NavLogoProps {
 export default function NavLogo({ texto, Icon }: Readonly<NavLogoProps>) {
   return (
     <div {...stylex.props(styles.brand)}>
-      <Icon height={40} width={40} />
+      <Icon height={50} width={50} />
       <div {...stylex.props(styles.brandTitle)}>{texto}</div>
     </div>
   );

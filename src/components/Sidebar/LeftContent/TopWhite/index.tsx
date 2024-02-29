@@ -5,6 +5,7 @@ const styles = stylex.create({
   whiteBoard: {
     width: "100%",
     height: 150,
+    background: colors["white-100"],
     backgroundColor: colors["white-100"],
   },
 });
@@ -19,6 +20,7 @@ const TopWhite = () => {
           paddingRight: "10px",
           width: "100%",
           justifyContent: "flex-end",
+          color: "red",
         }}
       >
         {/* <Logo width={50} height={50} onClick={() => setExibir(!exibir)} /> */}

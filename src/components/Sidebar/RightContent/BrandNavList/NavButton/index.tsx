@@ -1,7 +1,7 @@
 "use client";
 import stylex from "@stylexjs/stylex";
 
-import { colors, weightFont } from "../../../../../tokens.stylex";
+import { colors, weightFont, fontFamily } from "../../../../../tokens.stylex";
 
 const MAX_WIDTH_MEDIA_QUERY = "@media screen and (max-width: 600px)";
 
@@ -10,6 +10,7 @@ const styles = stylex.create({
     display: "flex",
     alignItems: "center",
     fill: colors["cinza-600"],
+    color: colors["cinza-600"],
     height: 40,
     width: { default: 290, [MAX_WIDTH_MEDIA_QUERY]: "initial" },
     marginBottom: 10,
@@ -21,6 +22,7 @@ const styles = stylex.create({
       default: "0px 0px 0px 10px",
       [MAX_WIDTH_MEDIA_QUERY]: "0px 10px 0px 10px",
     },
+    fontFamily: fontFamily.Epilogue,
   },
   navButtonText: {
     fontSize: 16,

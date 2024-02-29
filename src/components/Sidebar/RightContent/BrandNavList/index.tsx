@@ -17,7 +17,7 @@ const styles = stylex.create({
 });
 
 export default function BrandNavList() {
-  const [menuSelecionado, setMenuSelecionado] = useState("Home");
+  const [menuSelecionado, setMenuSelecionado] = useState("Dashboard");
   const handleSelect = (menu: string) => {
     setMenuSelecionado(menu);
   };
@@ -27,7 +27,7 @@ export default function BrandNavList() {
       <NavLogo Icon={LogotipoPrincipal} texto={"Appli"} />
       <NavButton
         Icon={HomeIcon}
-        text="Home"
+        text="Dashboard"
         onClick={handleSelect}
         selectedMenu={menuSelecionado}
       />

@@ -6,7 +6,7 @@ import RightContent from "./RightContent";
 const styles = stylex.create({
   sidebar: {
     minHeight: "100vh",
-    minWidth: 248,
+    minWidth: 247,
     display: "flex",
     overflow: "hidden",
     backgroundColor: colors["white-100"],
