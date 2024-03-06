@@ -1,28 +1,13 @@
-import stylex from "@stylexjs/stylex";
-import { colors } from "../../../tokens.stylex";
-import BrandNavList from "./BrandNavList";
+import RightContentRoot from "./RightContentRoot/RightContentRoot";
+import NavLogo from "./RightContentRoot/NavLogo";
+import NavButton from "./RightContentRoot/NavButton";
+import NavBotton from "./RightContentRoot/NavBottom";
+import BrandNavList from "./RightContentRoot/BrandNavList";
 
-const MAXWIDTH = "@media screen and (max-width: 600px)";
-
-const styles = stylex.create({
-  rightContent: {
-    minWidth: { default: 340, [MAXWIDTH]: "initial" },
-    minHeight: "100%",
-    width: { default: "initial", [MAXWIDTH]: 100 },
-    backgroundColor: colors["white-100"],
-    overflow: "hidden",
-    filter: "drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.04));",
-    zIndex: 2,
-    transition: "margin-left 0.7s linear",
-    position: { default: "initial", [MAXWIDTH]: "absolute" },
-    marginLeft: { default: "initial", [MAXWIDTH]: "-55vh" },
-  },
-});
-
-export default function RightContent() {
-  return (
-    <div {...stylex.props(styles.rightContent)}>
-      <BrandNavList />
-    </div>
-  );
-}
+export const RightContent = {
+  Root: RightContentRoot,
+  BrandNavList: BrandNavList,
+  NavLogo: NavLogo,
+  NavButton: NavButton,
+  NavBotton: NavBotton,
+};
